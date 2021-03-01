@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BigHintDemo</string>
+    <string name="namo"><font size="30">Enter your name</font></string>
+</resources>

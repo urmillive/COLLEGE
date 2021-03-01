@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">020_List_View_Item_click</string>
+    <string-array name="languages">
+        <item>C</item>
+        <item>C++</item>
+        <item>C#</item>
+        <item>Java</item>
+        <item>PHP</item>
+        <item>Kotlin</item>
+        <item>Node</item>
+    </string-array>
+</resources>

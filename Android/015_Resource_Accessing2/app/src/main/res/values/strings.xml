@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">015_Resource_Accessing-2</string>
+    <string name="hellocoder">Hello Coder(){}</string>
+</resources>

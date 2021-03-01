@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">018_List_view_with_xml</string>
+    <string-array name="Citys">
+        <item>Amreli</item>
+        <item>Rajula</item>
+        <item>Lathi</item>
+        <item>Dhasa</item>
+        <item>Damnagar</item>
+    </string-array>
+</resources>

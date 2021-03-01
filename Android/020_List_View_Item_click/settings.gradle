@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "020_List_View_Item_click"

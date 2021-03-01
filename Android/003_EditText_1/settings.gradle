@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "003_EditText_1"
