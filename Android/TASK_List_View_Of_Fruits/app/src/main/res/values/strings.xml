@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">021 List View of Fruits</string>
+    <string-array name="fruits">
+        <item>Apple</item>
+        <item>Cherry</item>
+        <item>Guava</item>
+        <item>Melon</item>
+        <item>Orange</item>
+        <item>Pineapple</item>
+        <item>Strawberry</item>
+        <item>Watermelon</item>
+    </string-array>
+</resources>

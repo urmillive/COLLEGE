@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">023_Fragment_Demo</string>
+    <string name="hello_blank_fragment">Hello Second fragment</string>
+</resources>
