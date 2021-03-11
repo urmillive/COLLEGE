@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_activated="true">
-        <bitmap android:src="@drawable/f7"></bitmap>
+        <bitmap android:src="@drawable/f_5"></bitmap>
     </item>
     <item android:state_activated="true">
-        <bitmap android:src="@drawable/f1"></bitmap>
+        <bitmap android:src="@drawable/f_0"></bitmap>
     </item>
 </selector>

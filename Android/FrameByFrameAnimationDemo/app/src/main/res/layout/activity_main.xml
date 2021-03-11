@@ -7,26 +7,29 @@
     android:background="#fff"
     tools:context=".MainActivity">
 
-   <ImageView
-       android:visibility="invisible"
-       android:id="@+id/img_animate_add"
-       android:layout_width="150dp"
-       android:layout_height="150dp"
-       android:background="@drawable/animate_list_add"
-      />
-   <ImageView
-       android:layout_centerHorizontal="true"
-       android:layout_centerVertical="true"
-       android:id="@+id/img_animate_remove"
-       android:layout_width="180dp"
-       android:layout_height="40dp"
-       android:background="@drawable/animate_list_remove"
-       />
-   <ImageView
-       android:visibility="invisible"
-       android:id="@+id/img_animate_select"
-       android:layout_width="150dp"
-       android:layout_height="150dp"
-       android:background="@drawable/selector"
-       />
+    <ImageView
+        android:id="@+id/img_animate_add"
+        android:visibility="gone"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/animate_list_add" />
+
+    <ImageView
+        android:id="@+id/img_animate_remove"
+        android:visibility="visible"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/animate_list_remove" />
+
+    <ImageView
+        android:id="@+id/img_animate_select"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector" />
 </RelativeLayout>
