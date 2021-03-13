@@ -5,5 +5,6 @@ def pinots():
     print(almonds)
     print(pista)
 
+pinots()
 print(almonds)
 print(pista) #NameError: name 'pista' is not defined
