@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SQliteDemo</string>
+    <string name="show_data">Show Data</string>
+    <string name="add_student">Add Student</string>
+    <string-array name="std">
+        <item>BCA</item>
+        <item>BBA</item>
+        <item>Bcom</item>
+        <item>Bsc IT</item>
+        <item>Bsc Phy</item>
+        <item>Bsc Chem</item>
+        <item>Bsc Bio</item>
+        <item>Microbiology</item>
+        <item>UG</item>
+        <item>PG</item>
+        <item>PHD</item>
+    </string-array>
+</resources>
+

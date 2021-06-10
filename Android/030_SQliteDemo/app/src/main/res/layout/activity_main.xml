@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:hint="Enter Roll No"
+        />
+
+    <EditText
+        android:id="@+id/ed2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:hint="Enter your Name"
+        />
+
+    <RadioGroup
+        android:id="@+id/r_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="150dp">
+
+        <RadioButton
+            android:id="@+id/r_male"
+            android:text="Male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+       <RadioButton
+           android:id="@+id/r_female"
+           android:text="Female"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           />
+    </RadioGroup>
+    <Spinner
+        android:id="@+id/sp_standard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:gravity="center"
+        android:entries="@array/std"
+        />
+    <Button
+        android:id="@+id/addstudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_student"
+        android:layout_marginTop="550dp"
+        android:onClick="addStudent"/>
+    <Button
+        android:id="@+id/btndata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/show_data"
+        android:onClick="showdata"
+        android:layout_marginTop="600dp"
+        />
+
+</RelativeLayout>
