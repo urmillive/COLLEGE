@@ -9,14 +9,14 @@ echo $txt." ".$txt2;
 
 $undecided = 3.432;
 print gettype($undecided);
-settype($undecided,boolean);
+settype($undecided,true);
 print gettype($undecided);
 
 // get first later
 
 $mystr = "jello world";
-$mystr{0} = "H";
-$mystr{12} = "!";
+// $mystr{0} = "H";
+// $mystr{12} = "!";
 print $mystr;
 
 ?>

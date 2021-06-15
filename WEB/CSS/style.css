@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    background-color: lightcoral;
+}
+#beautiful{
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    margin-top: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
