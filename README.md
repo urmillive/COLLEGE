@@ -1,3 +1,3 @@
-# BCA
+# BCA & MCA
 ## Collage Programs & Projects
 ## If you contribute then please try once...
