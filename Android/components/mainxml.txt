@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#299FD5"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/maintext"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_margin="18dp"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:background="#fff"
+        android:text="@string/website"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="18dp"
+        android:background="#2196F3"
+        android:text="@string/search"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/callSomeone"
+        android:background="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="18dp"
+        android:id="@+id/btn3"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialpad"
+        android:background="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginBottom="18dp"
+        android:id="@+id/btn4"    />
+</LinearLayout>

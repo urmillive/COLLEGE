@@ -1,0 +1,53 @@
+package com.example.imageviewdemo;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+    Button btn1,btn2;
+    ImageView img1;
+    int COUNT = 0;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        btn1 = (Button) findViewById(R.id.btnChange);
+        btn2 = (Button) findViewById(R.id.btnReset);
+        img1 = (ImageView)findViewById(R.id.imageView);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                COUNT++;
+                if (COUNT==1)
+                {
+                    img1.setImageResource(R.drawable.b);
+                }
+                else if (COUNT==2)
+                {
+                    img1.setImageResource(R.drawable.c);
+                }
+                else if (COUNT==3) {
+                    img1.setImageResource(R.drawable.d);
+                }
+                else
+                {
+                    Toast.makeText(getBaseContext(),"You Reached The End Of The Image Tap On Reset Button",Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                COUNT = 0;
+                img1.setImageResource(R.drawable.a);
+            }
+        });
+    }
+}

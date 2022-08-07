@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    android:padding="18dp">
+
+    <EditText
+        android:id="@+id/edtTit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a title"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/edtDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a description here"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create on channel 1"
+        android:textColor="@color/white"
+        android:onClick="sendOnChannel1"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create on channel 2"
+        android:textColor="@color/white"
+        android:onClick="sendOnChannel2"/>
+
+</LinearLayout>
+

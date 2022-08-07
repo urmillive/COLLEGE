@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#03A9F4"
+    tools:context=".MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="JUDO"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="KARATE"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="BOXING"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="CRICKET"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"/>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="18dp"
+            android:id="@+id/seekbar1"
+            android:indeterminate="false"
+            android:max="100"
+            android:min="0"/>
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:layout_gravity="center"
+            android:id="@+id/ratingbar1"
+            android:layout_marginTop="18dp"/>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="18dp"
+            android:id="@+id/seekbar2"
+            android:indeterminate="false"
+            android:max="100"
+            android:min="0"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/radioGroup">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile Development"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:id="@+id/radioButton1"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Web Development"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:id="@+id/radioButton2"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Software Development"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:id="@+id/radioButton3"/>
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

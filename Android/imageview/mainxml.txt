@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#112345"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:maxWidth="300dp"
+        android:maxHeight="300dp"
+        android:minWidth="300dp"
+        android:minHeight="300dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/a" />
+
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Change Image"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:backgroundTint="#FFC107"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Reset"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:backgroundTint="#E91E63"
+        android:textStyle="bold" />
+
+</LinearLayout>

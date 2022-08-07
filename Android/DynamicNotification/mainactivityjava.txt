@@ -1,0 +1,64 @@
+package com.ramghumaliya1004fswd.dynamicnotification;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import static com.ramghumaliya1004fswd.dynamicnotification.App.CHANNEL_1_ID;
+import static com.ramghumaliya1004fswd.dynamicnotification.App.CHANNEL_2_ID;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
+
+import android.app.Notification;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+
+//https://o7planning.org/10427/android-notification
+public class MainActivity extends AppCompatActivity {
+    EditText edtTit, edtDesc;
+    private NotificationManagerCompat notificationManagerCompat;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        edtTit = findViewById(R.id.edtTit);
+        edtDesc = findViewById(R.id.edtDesc);
+
+        notificationManagerCompat = NotificationManagerCompat.from(this);
+
+    }
+    public void sendOnChannel1(View v){
+        String title = edtTit.getText().toString();
+        String desc = edtDesc.getText().toString();
+        Notification notification = new NotificationCompat.Builder(
+                this,
+                CHANNEL_1_ID
+        )
+                .setSmallIcon(R.drawable.ic_baseline_home_24)
+                .setContentTitle(title)
+                .setContentText(desc)
+                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .setCategory(NotificationCompat.CATEGORY_MESSAGE)
+                .build();
+        notificationManagerCompat.notify(1,notification);
+    }
+    public  void sendOnChannel2(View v){
+        String title = edtTit.getText().toString();
+        String desc = edtDesc.getText().toString();
+        Notification notification = new NotificationCompat.Builder(
+                this,
+                CHANNEL_2_ID
+        )
+                .setSmallIcon(R.drawable.ic_info)
+                .setContentTitle(title)
+                .setContentText(desc)
+                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .setCategory(NotificationCompat.CATEGORY_MESSAGE)
+                .build();
+        notificationManagerCompat.notify(2,notification);
+    }
+
+
+}

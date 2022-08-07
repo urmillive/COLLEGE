@@ -1,0 +1,34 @@
+package com.ramghumaliya1004fswd.servicesdemo;
+import android.app.Service;
+import android.content.Intent;
+import android.media.MediaPlayer;
+import android.net.Uri;
+import android.os.IBinder;
+
+import androidx.annotation.Nullable;
+
+public class Myservice extends Service {
+    private MediaPlayer player;
+    @Nullable
+    @Override
+    public IBinder onBind(Intent intent) {
+        return null;
+    }
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        String path="android.resource://com.ramghumaliya1004fswd.servicesdemo/"+R.raw.p;
+        player=MediaPlayer.create(this, Uri.parse(path));
+        player.start();
+        player.setLooping(true);
+        return START_STICKY;
+
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        player.stop();
+    }
+
+}

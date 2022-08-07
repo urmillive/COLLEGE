@@ -1,0 +1,33 @@
+package com.ramghumaliya1004fswd.explicitintentregistration;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class Home extends AppCompatActivity {
+    TextView txtName, txtEmail, txtUsername, txtPassword, txtGender;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_home);
+        txtName = findViewById(R.id.txtName);
+        txtEmail = findViewById(R.id.txtEmail);
+        txtUsername = findViewById(R.id.txtUsername);
+        txtPassword = findViewById(R.id.txtPassword);
+        txtGender = findViewById(R.id.txtGender);
+
+        Bundle extra = getIntent().getExtras();
+        String name = extra.getString("NAME");
+        String email = extra.getString("EMAIL");
+        String username = extra.getString("USERNAME");
+        String password = extra.getString("PASSWORD");
+        String gendertype = extra.getString("GENDER_TYPE");
+
+        txtName.setText("Name Is: "+name);
+        txtEmail.setText("Email Is: "+email);
+        txtUsername.setText("Username Is: "+username);
+        txtPassword.setText("Password Is: "+password);
+        txtGender.setText("Gender Is: "+gendertype);
+    }
+}

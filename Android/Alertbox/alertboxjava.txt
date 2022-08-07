@@ -1,0 +1,83 @@
+#AlertBox Code Java
+package com.ramghumaliya1004fswd.alertboxdemo;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.DialogInterface;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import com.google.android.material.textfield.TextInputLayout;
+
+public class MainActivity extends AppCompatActivity {
+    private EditText edt1;
+    private Button btn1;
+
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        edt1 = (EditText) findViewById(R.id.txtname);
+        btn1 = (Button) findViewById(R.id.btnclick);
+        Toast.makeText(this, "Welcome", Toast.LENGTH_SHORT).show();
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String name = edt1.getText().toString();
+                if (!name.equals("")) {
+                    AlertDialog.Builder builder = new
+                            AlertDialog.Builder(MainActivity.this);
+                    builder.setTitle("Username");
+                    builder.setMessage("Your name is: "+ name);
+                    builder.setCancelable(false);
+                    builder.setPositiveButton("Okay", new
+                            DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                }
+                            });
+                    builder.show();
+                }else {
+                    Toast.makeText(MainActivity.this, "Please enter name ", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder userdialog = new AlertDialog.Builder(this); userdialog.setTitle("I am a Dialog");
+        userdialog.setMessage("This is a alert dialog");
+        userdialog.setCancelable(false);
+        userdialog.setPositiveButton("Positive", new
+                DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(MainActivity.this, "Goodbye",
+                                Toast.LENGTH_SHORT).show();
+                        finish();
+                    }
+                });
+        userdialog.setNegativeButton("Negative", new
+                DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(MainActivity.this, "Welcome back",
+                                Toast.LENGTH_SHORT).show();
+                    }
+                });
+        userdialog.setNeutralButton("Neutral", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        Toast.makeText(MainActivity.this, "This is a neutral button", Toast.LENGTH_SHORT).show();
+                    }
+                });
+        userdialog.show();
+    }
+}
