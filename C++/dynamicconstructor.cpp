@@ -26,7 +26,7 @@ public:
 
 int main()
 {
-    char *name = "Jeet404";
+    char *name = "URMIL";
     text t1;
     t1 = text(name);
     t1.show();
